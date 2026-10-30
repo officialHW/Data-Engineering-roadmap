@@ -1,0 +1,111 @@
+# ============================================================
+# Data Engineering Roadmap: .gitignore
+# Rule of thumb: commit code, docs and small sample data.
+# Never commit secrets, big data files, local databases,
+# virtual environments, or generated build output.
+# ============================================================
+
+# ---- Secrets and credentials (never commit these) ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials.json
+service-account*.json
+secrets.*
+*.tfvars
+*.tfvars.json
+
+# ---- API keys and tokens ----
+*api_key*
+*api-key*
+*apikey*
+*api_token*
+*api_secret*
+*.token
+api_keys.*
+api_config.*
+.api/
+
+# ---- Claude Code (local project notes) ----
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# ---- Notebooks ----
+.ipynb_checkpoints/
+
+# ---- Data files and local databases (large or regenerated) ----
+*.db
+*.sqlite
+*.sqlite3
+*.parquet
+*.avro
+*.orc
+*.feather
+*.csv
+*.tsv
+*.jsonl
+
+# Exception: the SQL series practice data is meant to be committed
+!sql/data/**
+
+# ---- Terraform (state files can contain secrets) ----
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# ---- dbt ----
+target/
+dbt_packages/
+dbt_modules/
+profiles.yml
+
+# ---- Spark ----
+spark-warehouse/
+metastore_db/
+derby.log
+
+# ---- Great Expectations ----
+great_expectations/uncommitted/
+
+# ---- Docker (local overrides) ----
+docker-compose.override.yml
+
+# ---- Logs and temp files ----
+*.log
+logs/
+*.tmp
+*.bak
+
+# ---- Node (if any tooling is added later) ----
+node_modules/
+
+# ---- OS files ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Editors ----
+.idea/
+*.swp
+.vscode/*
+!.vscode/extensions.json

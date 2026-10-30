@@ -1,291 +1,203 @@
-# Data Engineering Roadmap
+<p align="center">
+  <img src="assets/banner.svg" alt="Data Engineering Roadmap" width="100%">
+</p>
 
-A build-first roadmap for people who want to transition into data engineering by learning the fundamentals, building real projects, and documenting the engineering journey in public.
+<p align="center">
+  <a href="https://instagram.com/thefirst_henry"><img src="assets/instagram.svg" alt="Instagram @thefirst_henry" height="40"></a>
+  &nbsp;
+  <a href="https://github.com/officialHW"><img src="assets/github.svg" alt="GitHub officialHW" height="40"></a>
+</p>
 
-> **The goal is not to learn every data tool. The goal is to learn how data systems work, build them, break them, fix them, and understand the engineering decisions behind them.**
+A build-first roadmap for people who want to move into data engineering: learn the basics, build real projects, and document the journey in public.
 
-## What is this repository for?
+> The goal is not to learn every data tool. The goal is to understand how data systems work, build them, break them, fix them, and explain the decisions behind them.
 
-This repository is the working roadmap behind a practical data engineering portfolio.
+---
 
-It is designed to turn data engineering from a list of technologies to learn into a sequence of problems to solve.
+## Start here
 
-The roadmap moves through the core stages of a modern data engineering journey:
+New to data? You don't need to know anything yet. Pick the first step and begin.
 
-```text
-Python + SQL
-     ↓
-Data ingestion
-     ↓
-ETL / ELT
-     ↓
-Data modelling
-     ↓
-Data warehouses
-     ↓
-Batch processing
-     ↓
-Streaming
-     ↓
-Data quality
-     ↓
-Orchestration
-     ↓
-Cloud
-     ↓
-CI/CD + Infrastructure as Code
+| Step | What to do | Where | Status |
+|:---:|---|---|:---:|
+| **01** | Learn SQL with my beginner series and practice database | [`/sql`](sql/) | <img src="https://img.shields.io/badge/Live-2EA043?style=flat-square" alt="Live"> |
+| **02** | Learn Python basics | `/python` | <img src="https://img.shields.io/badge/Coming%20soon-6E7781?style=flat-square" alt="Coming soon"> |
+| **03** | Build Project 1: API to Data Warehouse | Own repository | <img src="https://img.shields.io/badge/Coming%20soon-6E7781?style=flat-square" alt="Coming soon"> |
+
+**[Open the SQL practice database](sql/README.md).** Copy one file, paste it into a free website, and you're querying data in two minutes.
+
+---
+
+## What is data engineering?
+
+Data engineers build the **pipes** that move data from where it is created to where people can use it.
+
+Think of plumbing for data. An app creates data, a pipeline carries it, cleans it and stores it, and analysts and dashboards use it at the other end.
+
+---
+
+## The journey at a glance
+
+```
+Python + SQL  >  Ingestion  >  ETL / ELT  >  Modelling  >  Warehouses
+   >  Batch  >  Streaming  >  Data quality  >  Orchestration
+   >  Cloud  >  CI/CD + Infrastructure as Code
 ```
 
-Each stage is connected to a practical project so that the learner can turn knowledge into evidence of engineering ability.
+| Stage | In plain English |
+|---|---|
+| **Python + SQL** | The two main languages for working with data |
+| **Data ingestion** | Getting data in from apps, files and APIs |
+| **ETL / ELT** | Cleaning and reshaping data on its way to storage |
+| **Data modelling** | Organising data so it's easy to use |
+| **Data warehouse** | A database built for analysis, not for running apps |
+| **Batch processing** | Handling data in scheduled chunks, like once a night |
+| **Streaming** | Handling data the moment it arrives |
+| **Data quality** | Checking the data is correct and complete |
+| **Orchestration** | Running pipeline steps in the right order, on a schedule |
+| **Cloud** | Running things on rented servers instead of your laptop |
+| **CI/CD + IaC** | Using code to automatically test, deploy and set up systems |
 
-## Why was this created?
+---
 
-A common problem when learning data engineering is knowing **what to learn next** but not knowing **what to build with it**.
+## Live now: SQL series
 
-There are hundreds of tools, courses and tutorials available. It is easy to jump between Python, SQL, Spark, Airflow, Kafka, cloud platforms and other technologies without developing a clear understanding of how they fit together.
+I'm teaching SQL from the ground up, using one shared practice database: **The First Henry Store**, a pretend online shop with 250 customers, 40 products and 2,500 orders.
 
-This roadmap was created to provide a different approach:
+<img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite"> <img src="https://img.shields.io/badge/sqliteonline-6E7781?style=flat-square" alt="sqliteonline">
 
-**Learn → build → test → break → investigate → fix → document → improve.**
+**What you get in [`/sql`](sql/):**
 
-Instead of treating projects as finished when the code runs, the roadmap encourages production-minded habits such as testing, logging, error handling, data quality, reproducibility, CI/CD and infrastructure.
+- the full practice database as a single file
+- a two-minute setup guide with no installs
+- starter queries to try straight away
+- a diagram showing how the tables connect
 
-The repository will also be developed through incremental commits. The intention is to make the learning process visible rather than only publishing polished final projects.
+Follow the series on Instagram: [@thefirst_henry](https://instagram.com/thefirst_henry)
 
-## Who is this for?
+---
 
-This roadmap is primarily for:
+## The five projects
 
-- Career switchers moving into data engineering
-- Beginners who understand the basics of Python or SQL and want a structured path
-- Data analysts who want to move closer to engineering
-- Recent graduates building a practical data engineering portfolio
-- Self-taught developers who want hands-on data engineering experience
-- Anyone who wants to understand how modern data pipelines are designed and operated
+Each stage connects to a project, so you build evidence of what you can do. Every project gets its own repository, linked here when it's ready.
 
-You do **not** need to know every technology listed here before starting.
+### Project 1: API to Data Warehouse
+Pull data from the internet, clean it, and store it in a database.<br>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"> <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"> <img src="https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white" alt="dbt"> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"> <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions">
 
-The roadmap is intentionally progressive. Learn the concept you need, apply it to the current project, and then move forward.
+### Project 2: End-to-End Data Platform
+Combine several data sources into one analytics platform.<br>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"> <img src="https://img.shields.io/badge/PySpark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" alt="PySpark"> <img src="https://img.shields.io/badge/Delta%20Lake-00ADD4?style=flat-square" alt="Delta Lake"> <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
+
+### Project 3: Real-Time Data Pipeline
+Handle data that arrives continuously instead of in batches.<br>
+<img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" alt="Kafka"> <img src="https://img.shields.io/badge/Spark%20Structured%20Streaming-E25A1C?style=flat-square&logo=apachespark&logoColor=white" alt="Spark Structured Streaming">
+
+### Project 4: Data Quality and Observability
+Catch bad, missing or stale data before anyone relies on it.<br>
+<img src="https://img.shields.io/badge/Great%20Expectations-FF6310?style=flat-square" alt="Great Expectations"> <img src="https://img.shields.io/badge/PyTest-0A9EDC?style=flat-square&logo=pytest&logoColor=white" alt="PyTest"> <img src="https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white" alt="dbt"> <img src="https://img.shields.io/badge/Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white" alt="Airflow">
+
+### Project 5: Cloud Data Infrastructure
+Deploy and reproduce the whole system in the cloud.<br>
+<img src="https://img.shields.io/badge/Terraform-844FBA?style=flat-square&logo=terraform&logoColor=white" alt="Terraform"> <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions"> <img src="https://img.shields.io/badge/IAM-6E7781?style=flat-square" alt="IAM">
+
+---
 
 ## How to use this roadmap
 
-### 1. Start with the foundations
+1. **Start with the foundations.** Python, SQL, Git and GitHub, the command line, databases, APIs, and file formats like CSV and JSON. You don't need mastery before your first project.
+2. **Follow the project order.** Each project builds on the last.
+3. **Build in small steps.** Start with something that works, then improve it with commits, so the history tells the story.
+4. **Write down your decisions.** What problem you solved, why you chose each tool, what broke, and how you fixed it.
+5. **Don't just copy tutorials.** Use them to learn, then build from the problem.
 
-Build a working understanding of:
+> **Learn, build, test, break, investigate, fix, document, improve.**
 
-- Python
-- SQL
-- Git and GitHub
-- Linux/command line fundamentals
-- Databases
-- APIs
-- Data formats such as CSV, JSON and Parquet
+---
 
-You do not need mastery before starting your first project.
+## A production-ready mindset
 
-### 2. Follow the project sequence
+A project isn't finished just because it runs on your laptop. As projects grow, aim to show these habits.
 
-The portfolio is structured as a progression rather than a collection of unrelated projects.
+<details>
+<summary><b>See the checklist, explained in plain English</b></summary>
 
-#### Project 1 - API to Data Warehouse
+<br>
 
-Learn how to reliably extract external data, transform it and load it into a database.
+| Habit | What it means |
+|---|---|
+| Reproducible setup | Anyone can run it and get the same result |
+| Configuration management | Settings live outside the code |
+| Automated testing | Code checks itself |
+| Data validation | The data is checked before it's trusted |
+| Error handling and logging | Failures are caught and recorded |
+| Incremental processing | Only new data is processed each time |
+| **Idempotency** | Running it twice gives the same result, not duplicates |
+| CI/CD | Tests and deployment run automatically |
+| Secrets management | Passwords and keys are never stored in code |
+| Monitoring and observability | You find out when something breaks |
+| Infrastructure as Code | Servers are set up with code, not clicks |
 
-**Core technologies:** Python, REST APIs, PostgreSQL, SQL, dbt, Docker and GitHub Actions.
+Not every project needs every habit. Complexity should grow with the project.
 
-#### Project 2 - End-to-End Data Platform
+</details>
 
-Move from one pipeline to a multi-source analytical platform using data modelling and layered storage.
-
-**Core technologies:** Python, SQL, PySpark, object storage, Delta Lake and data warehouses.
-
-#### Project 3 - Real-Time Data Pipeline
-
-Learn how systems handle data that arrives continuously rather than as scheduled batches.
-
-**Core technologies:** Kafka, PySpark Structured Streaming and real-time processing.
-
-#### Project 4 - Data Quality and Observability
-
-Learn how to make pipelines trustworthy by detecting bad, incomplete or stale data.
-
-**Core technologies:** Great Expectations, PyTest, dbt tests, Airflow and monitoring.
-
-#### Project 5 - Cloud Data Engineering Infrastructure
-
-Take the system beyond the local environment and learn how to deploy and reproduce infrastructure.
-
-**Core technologies:** One cloud platform, Terraform, IAM, GitHub Actions and CI/CD.
-
-### 3. Build incrementally
-
-Do not wait until you understand everything.
-
-Start with a minimal working pipeline, then improve it through commits.
-
-For example:
-
-```text
-commit 1 - project setup
-commit 2 - generate sample data
-commit 3 - build ingestion
-commit 4 - add transformation
-commit 5 - add database loading
-commit 6 - add tests
-commit 7 - add error handling
-commit 8 - add logging
-commit 9 - containerise
-commit 10 - add CI
-commit 11 - improve documentation
-```
-
-The commit history should tell the story of how the system evolved.
-
-### 4. Document engineering decisions
-
-For every project, document:
-
-- The problem being solved
-- The architecture
-- The technologies selected
-- Why those technologies were selected
-- Data flow
-- Testing strategy
-- Failure handling
-- Trade-offs
-- What went wrong during development
-- What was changed to fix it
-- What would be required for production
-
-### 5. Do not copy tutorials blindly
-
-Tutorials are useful for learning concepts, but the objective is to develop the ability to make engineering decisions independently.
-
-When possible, build from the problem statement first and use documentation, examples and references when you get stuck.
-
-## Production-ready mindset
-
-A project is not considered complete simply because it runs on one machine.
-
-A portfolio project should progressively demonstrate:
-
-- Reproducible setup
-- Configuration management
-- Automated testing
-- Data validation
-- Error handling
-- Logging
-- Incremental processing
-- Idempotency
-- Documentation
-- Version control
-- CI/CD
-- Security and secrets management
-- Monitoring and observability
-- Infrastructure as Code where appropriate
-
-Not every project needs every capability. The complexity should grow with the project.
+---
 
 ## Repository structure
 
-Projects should generally follow a structure similar to:
-
-```text
-project/
+```
+Data-Engineering-roadmap/
 ├── README.md
-├── src/
-├── tests/
-├── data/
-├── sql/
-├── notebooks/
-├── config/
-├── docker/
-├── infrastructure/
-├── .github/
-└── requirements.txt
+├── LICENSE
+├── assets/          banner and social buttons for this README
+└── sql/             SQL series
+    ├── README.md
+    ├── assets/      banner for the SQL series
+    ├── data/        the practice database (one SQL file)
+    └── episodes/    notes and queries for each part
 ```
 
-The exact structure can change depending on the project.
+More folders, such as `python/`, will appear as the roadmap grows. Each of the five projects will live in its own repository and be linked from here.
 
-## The learning philosophy
-
-The roadmap follows one principle:
-
-> **Build the thing you are trying to learn.**
-
-If you are learning APIs, build an ingestion pipeline.
-
-If you are learning SQL, build analytical models.
-
-If you are learning Spark, process larger datasets.
-
-If you are learning Kafka, build a streaming system.
-
-If you are learning data quality, deliberately introduce bad data and build checks that catch it.
-
-If you are learning cloud engineering, deploy the system.
-
-This creates a portfolio where every repository demonstrates a capability rather than simply listing a technology.
-
-## Follow the build
-
-This roadmap and the associated projects are being developed publicly through incremental commits.
-
-If you want to follow the journey, watch the repository and follow the GitHub account:
-
-**GitHub:** https://github.com/officialHW
-
-The aim is to share the progression from the first commit to increasingly production-ready data engineering projects - including the architecture, implementation, tests, fixes, improvements and engineering decisions along the way.
+---
 
 ## Progress
 
+- [x] SQL series practice database published
+- [ ] SQL foundations (series in progress)
 - [ ] Python foundations
-- [ ] SQL foundations
 - [ ] Git and GitHub
-- [ ] Project 1 - API to Data Warehouse
-- [ ] Data modelling
-- [ ] dbt
-- [ ] Docker
-- [ ] CI/CD
-- [ ] Project 2 - End-to-End Data Platform
-- [ ] PySpark
-- [ ] Delta Lake
-- [ ] Project 3 - Real-Time Data Pipeline
-- [ ] Kafka
-- [ ] Streaming concepts
-- [ ] Project 4 - Data Quality and Observability
-- [ ] Airflow
-- [ ] Testing and monitoring
-- [ ] Cloud fundamentals
-- [ ] Terraform
-- [ ] Project 5 - Cloud Data Engineering Infrastructure
+- [ ] Project 1: API to Data Warehouse
+- [ ] Project 2: End-to-End Data Platform
+- [ ] Project 3: Real-Time Data Pipeline
+- [ ] Project 4: Data Quality and Observability
+- [ ] Project 5: Cloud Data Infrastructure
+
+---
+
+## Follow the build
+
+This roadmap is built in public, one commit at a time, so you can see the journey and not just the polished end result. Star and watch this repo to follow along.
+
+<a href="https://instagram.com/thefirst_henry"><img src="assets/instagram.svg" alt="Instagram @thefirst_henry" height="40"></a>
+&nbsp;
+<a href="https://github.com/officialHW"><img src="assets/github.svg" alt="GitHub officialHW" height="40"></a>
+
+---
 
 ## The end goal
 
-The end goal is not five repositories.
+Not five repositories. The ability to look at any data problem and work through it:
 
-It is the ability to look at a data problem and confidently work through:
-
-```text
-What data do we have?
-        ↓
-Where does it come from?
-        ↓
-How should we ingest it?
-        ↓
-How should we store it?
-        ↓
-How should we transform it?
-        ↓
-How do we know it is correct?
-        ↓
-How do we orchestrate it?
-        ↓
-How do we monitor it?
-        ↓
-How do we deploy it?
-        ↓
-How do we maintain it?
+```
+What data do we have?  >  Where does it come from?  >  How do we ingest it?
+>  How do we store it?  >  How do we transform it?  >  How do we know it's correct?
+>  How do we schedule it?  >  How do we monitor it?  >  How do we deploy and maintain it?
 ```
 
-That is the journey this repository is designed to document.
+---
+
+## License
+
+Released under the [MIT License](LICENSE).
