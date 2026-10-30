@@ -176,6 +176,18 @@ More folders, such as `python/`, will appear as the roadmap grows. Each of the f
 
 ---
 
+## Share your feedback
+
+This roadmap gets better when you tell me what works and what doesn't. You can:
+
+- **Share a thought or ask a question** in [Discussions](https://github.com/officialHW/Data-Engineering-roadmap/discussions).
+- **Suggest an improvement or report a mistake** by [opening an issue](https://github.com/officialHW/Data-Engineering-roadmap/issues/new/choose). An issue is just a note that other people can see and reply to.
+- **Comment on the reels** on [Instagram](https://instagram.com/thefirst_henry) if you don't have a GitHub account.
+
+GitHub needs a free account for the first two. No question is too basic.
+
+---
+
 ## Follow the build
 
 This roadmap is built in public, one commit at a time, so you can see the journey and not just the polished end result. Star and watch this repo to follow along.

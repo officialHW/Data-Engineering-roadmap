@@ -1,0 +1,28 @@
+name: Feedback or suggestion
+description: Tell me what you think, or how an episode or the roadmap can be improved.
+title: "Feedback: "
+labels: ["feedback"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: What is this about?
+      options:
+        - SQL series (which part?)
+        - Practice database
+        - Roadmap or projects
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: thoughts
+    attributes:
+      label: What do you think, or how can it be improved?
+      description: Plain words are fine. If something confused you, say where.
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else? (optional)
+      description: The part number, a link, or the query that gave you trouble.

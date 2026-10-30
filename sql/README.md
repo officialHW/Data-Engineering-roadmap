@@ -149,6 +149,12 @@ More parts will be added here as the series grows.
 
 ---
 
+## Tell me what you think
+
+Found a mistake, got stuck, or know a better way to explain something? Join the [discussion](https://github.com/officialHW/Data-Engineering-roadmap/discussions) or [open an issue](https://github.com/officialHW/Data-Engineering-roadmap/issues/new/choose). You can also comment on the reels on [Instagram](https://instagram.com/thefirst_henry).
+
+---
+
 ## Messy data on purpose
 
 Real data is never perfect, so this dataset isn't either:

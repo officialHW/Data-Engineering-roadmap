@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Ask a question or share a thought
+    url: https://github.com/officialHW/Data-Engineering-roadmap/discussions
+    about: Discussions are best for questions and general feedback.
